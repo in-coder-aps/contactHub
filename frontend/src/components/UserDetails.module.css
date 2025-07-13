@@ -1,0 +1,34 @@
+/* src/components/UserDetails.module.css */
+.userDetails {
+  border: 1px solid #e0e0e0;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  background-color: #eaf4f1; /* Light green-blue */
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.userDetails h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.userDetails p {
+  margin: 5px 0 0;
+  color: #555;
+  font-size: 0.95em;
+}
+
+.logoutButton {
+  padding: 8px 15px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 4px;
+}
+
+.logoutButton:hover {
+  background-color: #c82333;
+}

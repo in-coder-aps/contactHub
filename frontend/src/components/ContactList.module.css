@@ -1,0 +1,80 @@
+/* src/components/ContactList.module.css */
+.contactList {
+  list-style: none;
+  padding: 0;
+}
+
+.contactItem {
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column; /* Stack info vertically on small screens */
+  gap: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 600px) {
+  .contactItem {
+    flex-direction: row; /* Layout horizontally on larger screens */
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contactInfo {
+  flex-grow: 1;
+}
+
+.contactInfo strong {
+  color: #34495e;
+  font-size: 1.1em;
+}
+
+.contactInfo p {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px; /* Space from info on smaller screens */
+}
+
+@media (min-width: 600px) {
+  .buttonGroup {
+    margin-top: 0; /* Remove top margin on larger screens */
+  }
+}
+
+.editButton {
+  background-color: #ffc107;
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #e0a800;
+}
+
+.deleteButton {
+  background-color: #dc3545;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+}
+
+.noContactsMessage {
+  text-align: center;
+  color: #777;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: #f0f0f0;
+}

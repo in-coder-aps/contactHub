@@ -1,0 +1,58 @@
+/* src/components/AuthForms.module.css */
+.authContainer {
+  display: flex;
+  justify-content: center; /* Center the single form */
+  padding: 20px; /* Add some padding around the form */
+}
+
+.authForm {
+  background-color: #f9f9f9;
+  padding: 30px; /* Increased padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* More prominent shadow */
+  width: 100%;
+  max-width: 400px; /* Max width for the form */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.authForm h2 {
+  text-align: center;
+  color: #2c3e50; /* Darker blue for headings */
+  margin-bottom: 25px; /* Increased margin */
+}
+
+/* Inherits global input styles */
+.authForm input {
+  margin-bottom: 18px; /* Slightly more space between inputs */
+}
+
+.authButton {
+  background-color: #007bff; /* Primary blue color */
+  color: white;
+  width: 100%;
+  padding: 12px; /* Larger button */
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.authButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.toggleLink {
+  text-align: center;
+  margin-top: 25px; /* Space below button */
+  font-size: 0.95em;
+  color: #555;
+}
+
+.toggleLink span {
+  color: #007bff; /* Link color */
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.toggleLink span:hover {
+  color: #0056b3;
+}
