@@ -8,6 +8,7 @@ connectDb();
 const app = express();
 const port = process.env.PORT || 5000;
 
+app.set('trust proxy', 1);
 app.use(cors());
 app.use(express.json()); //Inbuilt Express middleware that parses incoming JSON request bodies and populates `req.body`.
 app.use("/api/contacts", require("./routes/contactRoutes"));
